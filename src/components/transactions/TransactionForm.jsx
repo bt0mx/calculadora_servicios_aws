@@ -30,8 +30,8 @@ export function TransactionForm() {
 
   const [lista, setLista] = useState([])
   const GetList = () => {
-    axios.get("https://rickandmortyapi.com/api/character").then((value) => {
-      setLista(value.data.results)
+    axios.get("http://localhost:4000/NameService").then((value) => {
+      setLista(value.data)
     })
   }
   
@@ -42,15 +42,15 @@ export function TransactionForm() {
 
   const handleChange = (e) => {
       const id = e.target.value
-      axios.get("https://rickandmortyapi.com/api/character/"+id).then((value) => {
-        console.log(value.data.gender)
-        setDesc(value.data.gender)
+      axios.get("http://localhost:4000/Data/"+id).then((value) => {
+        setDesc(value.data[0].DescriptionTipe)
+        setAmount(value.data[0].Price)
+        setName(value.data[0].NameType)
+        console.log(value.data[0].NameType)
       })
 
-    setAmount(id)
-  }
-
- 
+    
+  } 
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -61,10 +61,9 @@ export function TransactionForm() {
           className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full visibility: hidden"
           value="aws"
         />
-
         <select onChange={handleChange} value={amount} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="servicio">
       {lista.map((item) => {
-       return <option key={item.id} value={item.id} des={item.id}>{item.name}</option> 
+       return <option key={item.IdTipe} value={item.IdTipe} des={item.DescriptionTipe}>{item.NameType}</option> 
       })}
     </select>
     <br />

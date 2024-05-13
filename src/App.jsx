@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Inicio></Inicio>}></Route>
             <Route path='/calculadora' element={<Calculadora></Calculadora>}></Route>
-            <Route path='/servicios' element={<Servicios></Servicios>}></Route>
+            {false&& <Route path='/servicios' element={<Servicios></Servicios>}></Route>}
             {<Route path='*' element={<Navigate to="/" ></Navigate>}></Route>}
           </Routes>
       </Layaut>
