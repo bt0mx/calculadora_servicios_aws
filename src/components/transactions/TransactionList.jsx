@@ -23,7 +23,7 @@ export function TransactionList() {
       <br />
       <ul>
         {transactions.map((transaction) => (
-          <TransactionItem key={transaction.id} transaction={transaction} />
+          <TransactionItem key={transaction.NameType} transaction={transaction} />
         ))}
       </ul>
     </div>
