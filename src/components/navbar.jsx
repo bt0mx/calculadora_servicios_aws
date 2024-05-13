@@ -9,15 +9,15 @@ const NavBar = () => {
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <NavLink to="/"><img src="https://bestplacetocode.com/sites/default/files/inline-images/Sin%20t%C3%ADtulo-3_Mesa%20de%20trabajo%201_0.png" alt="" className="" /></NavLink>
+        <NavLink to="/"><img src="https://www.b-drive.com.mx/assets/images/logosBDI/bdi-logo.png" alt="" className="" /></NavLink>
          
         
           <span className="ml-3 text-xl">Centro de Excelencia en la Nube</span>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center font-bold">
           <NavLink to="/" className={({ isActive, isPending }) => isPending ? activeLink  : isActive ? activeLink : btnLink  }>Inicio</NavLink>
           <NavLink to="/calculadora" className={({ isActive, isPending }) => isPending ? activeLink  : isActive ? activeLink : btnLink  }>Calculadora</NavLink>
-          <NavLink to="/servicios" className={({ isActive, isPending }) => isPending ? activeLink  : isActive ? activeLink : btnLink  }>Administrar Servicios</NavLink>
+         {/* <NavLink to="/servicios" className={({ isActive, isPending }) => isPending ? activeLink  : isActive ? activeLink : btnLink  }>Administrar Servicios</NavLink> */}
          
         </nav>
         {/*

@@ -11,8 +11,7 @@ const Inicio = () => {
 
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" >Calculadora de Precios
         </h1>
-        <p className="mb-8 leading-relaxed">
-Un Centro de Excelencia de Nube  es una entidad dentro de una organización dedicada a impulsar y facilitar la adopción exitosa de la nube en toda la empresa. Su objetivo principal es alinear la estrategia de la nube con los objetivos comerciales y tecnológicos de la organización, promoviendo las mejores prácticas y estandarizando los procesos relacionados con la nube.</p>
+        <p className="mb-8 leading-relaxed">En el Centro de Excelencia en la Nube de B-DRIVE IT/ENGINE CORE, entendemos que la transformación digital es fundamental para el éxito de su negocio en la era moderna. Es por eso que ofrecemos un equipo especializado de expertos en la nube que trabajan en estrecha colaboración con su empresa para diseñar, implementar y gestionar soluciones en la nube que impulsen la innovación y mejoren la eficiencia operativa.</p>
         <div className="flex justify-center">
          {/*<button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Explorar Calculadora</button>*/}
           <button className='buttonC'><NavLink to="/calculadora" className={(isActive) => isActive? activeLink:btnLink}>Explorar Calculadora</NavLink></button>

@@ -16,6 +16,7 @@ export function TransactionItem({ transaction: { id, description, amount } }) {
       {description}
       <div>
         <span>
+          
           {sign}${Math.abs(amount)}
         </span>
         <button

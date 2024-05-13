@@ -8,8 +8,8 @@ export function Balance() {
 
   return (
     <div className="flex justify-between items-center my-2">
-      <h4 className="text-slate-400">Costo Total</h4>
-      <h1 className="text-2xl font-bold">${total}</h1>
+      <h4 className="text-neutral-900 text-lg color">Costo Total</h4>
+      <h1 className="text-2xl font-bold">${total} m.n</h1>
     </div>
   );
 }
